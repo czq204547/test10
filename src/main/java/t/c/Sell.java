@@ -25,18 +25,18 @@ import java.util.List;
 //@SessionAttributes("user")
 public class Sell {
 
-    @RequestMapping(value = {"login"},method = RequestMethod.GET)
+    @RequestMapping(value = {"/login"},method = RequestMethod.GET)
     public String login(){
         return "login";
     }
 
-    @RequestMapping("index")
+    @RequestMapping("/index")
     public String index(){
         return "index";
     }
-    @RequestMapping("show")
+    @RequestMapping("/show")
     public String show(){return "show";}
-    @RequestMapping("public")
+    @RequestMapping("/public")
     public String publish(){return "public";}
     /*
     @Autowired
